@@ -335,6 +335,19 @@
 
     .alert-word {
         background-color: var(--color-background-alert-word);
+        color: var(--color-text-alert-word);
+
+        & a,
+        & a:hover {
+            color: var(--color-text-link-on-alert-word);
+            font-weight: 600;
+        }
+    }
+
+    /* If the alert word is inside a link, it should use the link-on-alert-word color. */
+    & a:not(.icon-button) .alert-word {
+        color: var(--color-text-link-on-alert-word);
+        font-weight: 600;
     }
 
     /* Timestamps */
@@ -1027,7 +1040,20 @@
 
 /* Search highlight used in both topics and rendered_markdown */
 .highlight {
-    background-color: hsl(51deg 100% 79%);
+    background-color: var(--color-background-highlight);
+    color: var(--color-text-highlight);
+
+    & a,
+    & a:hover {
+        color: var(--color-text-link-on-highlight);
+        font-weight: 600;
+    }
+}
+
+/* If the highlight is inside a link, it should use the link-on-highlight color. */
+a:not(.icon-button) .highlight {
+    color: var(--color-text-link-on-highlight);
+    font-weight: 600;
 }
 
 /* For elements where we want to show as much markdown content we can

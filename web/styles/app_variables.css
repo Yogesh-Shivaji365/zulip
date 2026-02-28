@@ -1037,7 +1037,21 @@
     --color-background-popover: light-dark(hsl(0deg 0% 100%), hsl(0deg 0% 17%));
     --color-background-alert-word: light-dark(
         hsl(18deg 100% 84%),
-        hsl(22deg 70% 35%)
+        hsl(18deg 100% 75%)
+    );
+    --color-text-alert-word: light-dark(inherit, hsl(0deg 0% 0%));
+    --color-text-link-on-alert-word: light-dark(
+        var(--color-text-link),
+        hsl(210deg 100% 25%)
+    );
+    --color-background-highlight: light-dark(
+        hsl(51deg 100% 79%),
+        hsl(51deg 100% 72%)
+    );
+    --color-text-highlight: light-dark(inherit, hsl(0deg 0% 0%));
+    --color-text-link-on-highlight: light-dark(
+        var(--color-text-link),
+        hsl(210deg 100% 25%)
     );
     --color-buddy-list-highlighted-user: var(
         --color-background-hover-narrow-filter
